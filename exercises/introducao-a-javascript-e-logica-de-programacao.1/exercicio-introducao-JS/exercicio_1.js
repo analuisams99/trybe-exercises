@@ -1,18 +1,8 @@
 let a = 5;
 let b = 10;
 
-let adicao = a + b; {
-  console.log(adicao)
-}
-let subtracao = a - b; {
-  console.log(subtracao)
-}
-let multiplicacao = a * b; {
-  console.log(multiplicacao)
-}
-let divisao = a / b; {
-  console.log(divisao)
-}
-let modulo = a % b; {
-  console.log(modulo)
-}
+console.log("adicao: " + (a + b));
+console.log("subtracao: " + (a - b));
+console.log("multiplicacao: " + (a * b));
+console.log("divisao: " + (a / b));
+console.log("modulo: " + (a % b));
