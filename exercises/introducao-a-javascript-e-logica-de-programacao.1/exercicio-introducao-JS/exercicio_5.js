@@ -7,7 +7,7 @@ let anguloPositivo = anguloA > 0 && anguloB > 0 && anguloC > 0;
 if (anguloPositivo > 0){
   if (somaAngulos === 180){
     console.log("true");
-  }else if (somaAngulos !== 180){
+  }else{
     console.log("false");
   }
 }else{
