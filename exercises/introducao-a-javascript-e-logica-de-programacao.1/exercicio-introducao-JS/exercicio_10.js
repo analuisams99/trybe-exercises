@@ -7,5 +7,5 @@ if (valorDeVenda > 0){
   let lucro = valorDeVenda - custoTotal;
   console.log("lucro: " + lucro * 1000);
 }else{
-  console.log("ERRO, SEM LUCRO")
+  console.log("ERRO, SEM LUCRO!")
 }
