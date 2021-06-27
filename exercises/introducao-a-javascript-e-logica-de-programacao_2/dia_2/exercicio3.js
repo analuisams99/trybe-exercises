@@ -4,4 +4,5 @@ let somaNumeros = 0;
 for ( let index = 0; index < numbers.length; index += 1){
   somaNumeros += numbers[index];
 }
-console.log(somaNumeros);
+let mediaAritmetica = somaNumeros / numbers.length;
+console.log(mediaAritmetica);
