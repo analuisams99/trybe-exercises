@@ -1,7 +1,0 @@
-div div:hover {
-  border-style: solid;
-}
-
-div div:nth-child(odd) {
-  font-style: italic;
-}
