@@ -64,9 +64,15 @@
       body.appendChild(tituloElements);
 
       // Exercicio 2
-      let createDiv = document.querySelector('body');
-      let h1 = createElement('h1');
-      h1.innerText = ''
+      let div1 = document.createElement('div');
+      div1.className = 'main-content';
+      body.appendChild(div1);
+
+      // Exercicio 3
+      let div2 = document.createElement('div');
+      div2.className = 'center-content';
+      div1.appendChild(div2);
+
 
 
     </script>
