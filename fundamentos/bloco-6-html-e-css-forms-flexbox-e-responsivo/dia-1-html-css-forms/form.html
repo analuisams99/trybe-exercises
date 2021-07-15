@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main>
+    <form action="">
+      <fieldset>
+        <legend>Dados pessoais</legend>
+        <label for="full-name">Nome</label>
+        <input type="text" maxlength="40" name="full-name" id="full-name" placeholder="Digite seu nome..." required>
+        <br><br>
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email" placeholder="Digite seu E-mail aqui" maxlength="50" required>
+        <br><br>
+        <label for="cpf">CPF</label>
+        <input type="number" name="cpf" id="cpf" maxlength="11" required>
+        <br><br>
+        <label for="endereco">Endereço</label>
+        <input type="text" name="endereco" id="endereco" maxlength="200" required>
+        <br><br>
+        <label for="cidade">Cidade</label>
+        <input type="text" name="cidade" id="cidade" maxlength="28" required>
+        <br><br>
+        <label for="estado">Estado</label>
+        <select name="estado" id="estado">
+          <option value=""></option>
+        </select>
+        <br><br>
+        <label for="tipo">Tipo</label>
+        <input type="radio button" name="Tipo" id="tipo" required placeholder="Casa, Apartamento">
+      </fieldset>
+      <fieldset>
+        <legend>Dados do seu último emprego</legend>
+        <label for="resumo-curriculo">Resumo do currículo</label> 
+        <br>
+        <textarea name="resumo-curriculo" id="resumo-curriculo" cols="30" rows="10" maxlength="1000" required></textarea>
+        <br><br>
+        <label for="cargo">Cargo</label>
+        <input type="text" name="cargo" id="cargo" maxlength="40" required>
+        <br><br>
+        <label for="description">Descrição do cargo</label>
+        <input type="text" name="descrição" id="description" maxlength="500" required>
+        <br><br>
+        <label for="initial-date">Data de início</label>
+        <input type="text" name="initialDate" id="initial-date">
+      </fieldset>
+    </form>
+  </main>
+</body>
+
+</html>
