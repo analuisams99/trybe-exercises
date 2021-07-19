@@ -14,6 +14,10 @@ body {
   display: flex;
 }
 
+header nav {
+  order: 1;
+}
+
 .logo-container {
   display: flex;
   justify-content: center;
