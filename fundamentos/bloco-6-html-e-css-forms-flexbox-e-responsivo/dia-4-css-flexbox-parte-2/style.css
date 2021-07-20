@@ -12,10 +12,11 @@ body {
 .header-container {
   background-color: #5C687C;
   display: flex;
+
 }
 
 header nav {
-  order: 1;
+  
 }
 
 .logo-container {
@@ -31,6 +32,8 @@ header nav {
 .menu-container {
   display: flex;
   width: 500px;
+  order: 1;
+  flex-grow: 1;
 }
 
 .menu-container ul {
