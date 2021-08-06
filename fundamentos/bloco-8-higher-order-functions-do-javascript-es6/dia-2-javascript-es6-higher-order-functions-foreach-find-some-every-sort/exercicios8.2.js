@@ -164,11 +164,20 @@ const books = [
 
 // assert.strictEqual(everyoneWasBornOnSecXX(), expectedResult);
 
-//6 - Faça uma função que retorne true , se algum livro foi lançado na década de 80, e false , caso contrário.
-const expectedResult = true;
+// //6 - Faça uma função que retorne true , se algum livro foi lançado na década de 80, e false , caso contrário.
+// const expectedResult = true;
 
-function someBookWasReleaseOnThe80s() {
-  return books.some((livro) => livro.releaseYear >= 1980 && livro.releaseYear <= 1989);
+// function someBookWasReleaseOnThe80s() {
+//   return books.some((livro) => livro.releaseYear >= 1980 && livro.releaseYear <= 1989);
+// }
+
+// assert.strictEqual(someBookWasReleaseOnThe80s(), expectedResult);
+
+//7 - Faça uma função que retorne true , caso nenhum author tenha nascido no mesmo ano, e false , caso contrário.
+const expectedResult = false;
+
+function authorUnique() {
+  return books.every((pessoas) => !pessoas.birthYear ? false : true);
 }
 
-assert.strictEqual(someBookWasReleaseOnThe80s(), expectedResult);
+assert.strictEqual(authorUnique(), expectedResult);
