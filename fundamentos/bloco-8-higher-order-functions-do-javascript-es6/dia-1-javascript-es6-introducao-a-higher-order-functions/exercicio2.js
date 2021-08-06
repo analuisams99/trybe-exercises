@@ -1,10 +1,8 @@
-const numeroSorteado = () => Math.floor(Math.random() * 5 + 1);
+const funcaoVerificadora = (numeroApostado, numeroSorteado) => numeroApostado === numeroSorteado; 
 
-const sorteio = (apostado, numeroSorteado) => {
-  if (apostado === numeroSorteado) {
-    return `Parabéns! Você ganhou, o numero sorteado foi ${numeroSorteado}`;
-  };
-  return `Tente novamente, seu numero apostado é ${apostado} e o numero sorteado foi ${numeroSorteado}`
+const sortear = (numeroApostado, funcaoVerificadora) => {
+  const numeroSorteado = Math.floor(Math.random() * 5 + 1);
+  return funcaoVerificadora(numeroApostado, numeroSorteado) ? `Parabéns, voce ganhou, seu numero é ${numeroApostado} e o resultado foi ${numeroSorteado}` : `Tente novamente, seu numero é ${numeroApostado} e o resultado foi ${numeroSorteado}`;
 };
 
-console.log(sorteio(3, numeroSorteado()));
+console.log(sortear(3, funcaoVerificadora));
